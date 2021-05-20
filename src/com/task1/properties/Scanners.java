@@ -3,14 +3,20 @@ package com.task1.properties;
 import java.util.Scanner;
 
 public class Scanners {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static int intScanner() {
-        Scanner intScanner = new Scanner(System.in);
-        return intScanner.nextInt();
+        while (!scanner.hasNext()){
+            scanner.next();
+        }
+        return scanner.nextInt();
     }
 
     public static double doubleScanner(){
-        Scanner doubleScanner = new Scanner(System.in);
-        return doubleScanner.nextDouble();
+        while (!scanner.hasNext()){
+        scanner.next();
+         }
+        return scanner.nextDouble();
     }
 
 }
