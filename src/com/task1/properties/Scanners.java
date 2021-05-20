@@ -1,4 +1,4 @@
-package com.company.properties;
+package com.task1.properties;
 
 import java.util.Scanner;
 

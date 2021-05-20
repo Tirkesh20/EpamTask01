@@ -1,6 +1,6 @@
-package com.company.task02;
+package com.task1.task02;
 
-import com.company.properties.Scanners;
+import com.task1.properties.Scanners;
 
 import java.util.InputMismatchException;
 

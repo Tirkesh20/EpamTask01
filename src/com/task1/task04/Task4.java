@@ -1,8 +1,9 @@
-package com.company.task04;
+package com.task1.task04;
 
-import com.company.properties.Scanners;
+import com.task1.properties.Scanners;
 
 import java.util.InputMismatchException;
+
 
 public class Task4 {
     public static double[] readingArray() {
