@@ -41,12 +41,15 @@ public class Task7 {
     }
 
     private static Point findClosestPoint(Point pointA, Point pointB,Point center) {
-        double p1=minDist(pointA,center);
-        double p2=minDist(pointB,center);
-             if (p1<p2){
-                 return pointA;
-             } else if (p1>p2){
+        double p1 = minDist(pointA, center);
+        double p2 = minDist(pointB, center);
+        if (!(p1 == p2)) {
+            if (p1 < p2) {
+                return pointA;
+            } else {
                 return pointB;
-             } else return null;
+            }
+        }
+        return null;
     }
 }
