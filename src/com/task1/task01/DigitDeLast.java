@@ -5,7 +5,7 @@ package com.task1.task01;
 public class DigitDeLast {
 
     private static final int N=10; //N - Base number of System
-
+    private static final int power=2;//defined power
 
     public static int getLastDigit(int num){
     if (num < 0)return num;
@@ -13,6 +13,6 @@ public class DigitDeLast {
     }
 
     public static int getDigitDeLastOfSquare(int num){
-     return getLastDigit((int) Math.pow(num,2));
+     return getLastDigit((int) Math.pow(num,power));
     }
 }
