@@ -13,43 +13,40 @@ public class Task7 {
      *Euclid formula of distance between 2 objects d=sqrt(pow(x1-x2,2)+pow(y1-y2,2))
      */
     public static void findClosest() {
-        double baseX,baseY;//начало координат
+        Point center=new Point("Center");//начало координат
         Point pointA = new Point("A");
         Point pointB = new Point("B");
-        System.out.println("enter base x");
-        baseX= Scanners.doubleScanner();
-        System.out.println("enter base y");
-        baseY=Scanners.doubleScanner();
+        setCoordinates(center);
         setCoordinates(pointA);
         setCoordinates(pointB);
 
-            Point point=findClosestPoint(pointA,pointB,baseX,baseY);
+            Point point=findClosestPoint(pointA,pointB,center);
             if (point != null) {
                 System.out.println(point.getPointName());
             } else {
                 System.out.println("objects  have same distance");
             }
-
     }
+
     public static void setCoordinates(Point point){
-        System.out.println("enter coordinates for point"+point.getPointName());
+        System.out.println("enter coordinates for point"+" "+point.getPointName());
         System.out.println("enter x");
         point.setX(Scanners.doubleScanner());
         System.out.println("enter y");
         point.setY(Scanners.doubleScanner());
     }
 
-    public static  double minDist(Point point,double x1,double y1){
-        return  Math.sqrt(Math.pow(x1- point.getX(),2)+(Math.pow(y1- point.getY(),2)));
+    public static  double minDist(Point point,Point center){
+        return  Math.sqrt(Math.pow(center.getX()- point.getX(),2)+ (Math.pow(center.getY()- point.getY(),2)));
     }
 
-    private static Point findClosestPoint(Point pointA, Point pointB,double x,double y) {
-        if (minDist(pointA,x,y)<((minDist(pointB,x,y)))){
-            return pointA;
-        } else if (minDist(pointA,x,y)>((minDist(pointA,x,y)))){
-            return pointB;
-        } else {
-            return null;
-        }
+    private static Point findClosestPoint(Point pointA, Point pointB,Point center) {
+        double p1=minDist(pointA,center);
+        double p2=minDist(pointB,center);
+             if (p1<p2){
+                 return pointA;
+             } else if (p1>p2){
+                return pointB;
+             } else return null;
     }
 }
