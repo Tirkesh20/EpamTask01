@@ -3,7 +3,7 @@ package com.task1.properties;
 import java.util.Scanner;
 
 public class Scanners {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
     public static int intScanner() {
         while (!scanner.hasNext()){

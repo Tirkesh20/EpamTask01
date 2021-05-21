@@ -10,11 +10,11 @@ public class Task4 {
         while (true) {
             System.out.println("Enter values:");
             try {
-                double[] arrayOfDouble = new double[4];
+                double[] array = new double[4];
                 for (int i = 0; i < 4; i++) {
-                    arrayOfDouble[i] = Scanners.doubleScanner();
+                    array[i] = Scanners.doubleScanner();
                 }
-                return arrayOfDouble;
+                return array;
             } catch (InputMismatchException e) {
                 System.out.println("Incorrect input");
             }

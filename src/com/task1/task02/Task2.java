@@ -7,10 +7,10 @@ import java.util.InputMismatchException;
 
 public class Task2 {
 
-    public static int validationOfYear() {
+    public static int validYear() {
         int year = -1;
         while (year < 0) {
-            System.out.println("Введите год:");
+            System.out.println("Enter year:");
             try {
                 year = Scanners.intScanner();
             }
@@ -24,7 +24,7 @@ public class Task2 {
         return year;
     }
 
-    public static int validationOfMonth() {
+    public static int validMonth() {
         int month;
         while (true) {
             System.out.println("Number of month:");
