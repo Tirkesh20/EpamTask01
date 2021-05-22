@@ -1,7 +1,7 @@
-package com.task1.task07;
+package by.epam.task1.task07;
 
 
-import com.task1.properties.Scanners;
+import by.epam.task1.properties.Scanners;
 
 public class Task7 {
     /*

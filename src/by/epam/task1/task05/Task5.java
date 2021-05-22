@@ -1,5 +1,5 @@
-package com.task1.task05;
-import com.task1.properties.Scanners;
+package by.epam.task1.task05;
+import by.epam.task1.properties.Scanners;
 
 public class Task5 {
     /*

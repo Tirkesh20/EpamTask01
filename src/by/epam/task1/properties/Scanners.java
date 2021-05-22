@@ -1,4 +1,4 @@
-package com.task1.properties;
+package by.epam.task1.properties;
 
 import java.util.Scanner;
 

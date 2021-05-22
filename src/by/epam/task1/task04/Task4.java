@@ -1,6 +1,6 @@
-package com.task1.task04;
+package by.epam.task1.task04;
 
-import com.task1.properties.Scanners;
+import by.epam.task1.properties.Scanners;
 
 import java.util.InputMismatchException;
 

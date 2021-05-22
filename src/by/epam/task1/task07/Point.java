@@ -1,4 +1,4 @@
-package com.task1.task07;
+package by.epam.task1.task07;
 
 import java.util.Objects;
 

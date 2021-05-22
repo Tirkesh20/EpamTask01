@@ -1,4 +1,4 @@
-package com.task1.task02;
+package by.epam.task1.task02;
 
 public class Test02 {
     public static void main(String[] args) {

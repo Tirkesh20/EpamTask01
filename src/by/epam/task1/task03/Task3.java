@@ -1,4 +1,4 @@
-package com.task1.task03;
+package by.epam.task1.task03;
 
 public class Task3 {
 

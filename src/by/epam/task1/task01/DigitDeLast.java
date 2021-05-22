@@ -1,4 +1,4 @@
-package com.task1.task01;
+package by.epam.task1.task01;
 /*
  Solution for task-1
   */

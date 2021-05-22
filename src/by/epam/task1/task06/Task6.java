@@ -1,6 +1,6 @@
-package com.task1.task06;
+package by.epam.task1.task06;
 
-import com.task1.properties.Scanners;
+import by.epam.task1.properties.Scanners;
     /*
     Идет n-я секунда суток, определить, сколько полных часов, полных минут и секунд прошло к этому
     моменту

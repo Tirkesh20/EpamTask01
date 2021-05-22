@@ -1,4 +1,4 @@
-package com.task1.task01;
+package by.epam.task1.task01;
 
 import java.util.Scanner;
 
