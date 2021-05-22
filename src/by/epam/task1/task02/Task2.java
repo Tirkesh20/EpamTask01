@@ -7,22 +7,6 @@ import java.util.InputMismatchException;
 
 public class Task2 {
 
-    public static int validYear() {
-        int year = -1;
-        while (year < 0) {
-            System.out.println("Enter year:");
-            try {
-                year = Scanners.intScanner();
-            }
-            catch (InputMismatchException e){
-                System.out.println("Некооректное значение.");
-            }
-            if (year < 0) {
-                System.out.println("Некооректное значение.");
-            }
-        }
-        return year;
-    }
 
     public static int validMonth() {
         int month;
@@ -34,18 +18,31 @@ public class Task2 {
             } else return month;
         }
     }
+    public static int validYear() {
+        int year = -1;//чтобы цикл сработал только 1 раз
+        while (year < 0) {
+            System.out.println("Enter year:");
+                year = Scanners.intScanner();
+            if (year < 0) {
+                System.out.println("incorrect input");
+            }
+        }
+        return year;
+    }
 
     public static boolean isLeap(int year) {
         return ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)));
+
     }
 
-    public static int daysInMonth(int validMonth, int validYear) {
+    public static int daysOfMonth(int validMonth, int validYear) {
         int[] days = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
         if(isLeap(validYear)){
             days[1] = 29;
+            System.out.println( "Leap year");
         }
+        System.out.println("not leap year");
         return days[validMonth-1];
     }
-
 
 }
