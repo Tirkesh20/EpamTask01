@@ -27,6 +27,7 @@ public class Task10 {
             double h=Scanners.doubleScanner();
             makeTable(a,b,h);
         }
+
         public static void makeTable(double a,double b,double h){
             System.out.println("|_______F(X)_______|______t(x)______|");
             double x=a;
