@@ -1,5 +1,4 @@
 package by.epam.task1.task10;
-
 import by.epam.task1.properties.Scanners;
 
 /*
@@ -9,7 +8,7 @@ import by.epam.task1.properties.Scanners;
     */
 public class Task10 {
 
-        public static void func() {
+        public static void function() {
             double a = 0, b = 0;
             boolean flag = true;
             while (flag) {

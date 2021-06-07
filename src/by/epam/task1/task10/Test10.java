@@ -1,5 +1,7 @@
 package by.epam.task1.task10;
 
 public class Test10 {
-    Task10.func();
+    public static void main(String[] args) {
+        Task10.function();
+    }
 }
