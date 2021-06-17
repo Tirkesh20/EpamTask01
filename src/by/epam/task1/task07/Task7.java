@@ -12,21 +12,7 @@ public class Task7 {
      *
      *Euclid formula of distance between 2 objects d=sqrt(pow(x1-x2,2)+pow(y1-y2,2))
      */
-    public static void findClosest() {
-        Point center=new Point("Center");//начало координат
-        Point pointA = new Point("A");
-        Point pointB = new Point("B");
-        setCoordinates(center);
-        setCoordinates(pointA);
-        setCoordinates(pointB);
 
-            Point point=findClosestPoint(pointA,pointB,center);
-            if (point != null) {
-                System.out.println(point.getPointName());
-            } else {
-                System.out.println("objects  have same distance");
-            }
-    }
 
     public static void setCoordinates(Point point){
         System.out.println("enter coordinates for point"+" "+point.getPointName());

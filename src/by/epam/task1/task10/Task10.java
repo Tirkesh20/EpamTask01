@@ -8,16 +8,9 @@ import by.epam.task1.properties.Scanners;
     */
 public class Task10 {
 
-        public static void function() {
-            double a = 0, b = 0;
+        public static void function(double a,double b) {
             boolean flag = true;
             while (flag) {
-                System.out.println("enter a");
-                a = Scanners.doubleScanner();
-                System.out.println(a);
-                System.out.println("enter b");
-                b = Scanners.doubleScanner();
-                System.out.println(b);
                 if (b <= a) {
                     System.out.println("a is bigger than b");
                     flag = true;

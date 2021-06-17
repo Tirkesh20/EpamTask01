@@ -14,7 +14,6 @@ import by.epam.task1.properties.Scanners;
         double s = findArea(r);
         double p = findCircle(r);
         System.out.printf("Area=%d Circle=%d",s,p);
-
     }
 
     public static double findArea(double r){
