@@ -8,9 +8,7 @@ public class Task5 {
     числу).
      */
 
-    public static boolean isPerfect(){
-        int n;
-        n=Scanners.intScanner();
+    public static boolean isPerfect(int n){
         int sum=0;
         for (int i=1;i<=n;i++){
             if (n%i==0)

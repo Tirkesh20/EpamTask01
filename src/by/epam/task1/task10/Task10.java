@@ -8,16 +8,13 @@ import by.epam.task1.properties.Scanners;
     */
 public class Task10 {
 
-        public static void function(double a,double b) {
+        public static void function(double a,double b,double h) {
             boolean flag = true;
             while (flag) {
                 if (b <= a) {
-                    System.out.println("a is bigger than b");
-                    flag = true;
+
                 } else flag = false;
             }
-            System.out.println("enter h");
-            double h=Scanners.doubleScanner();
             makeTable(a,b,h);
         }
 

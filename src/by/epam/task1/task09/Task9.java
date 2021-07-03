@@ -7,13 +7,10 @@ import by.epam.task1.properties.Scanners;
  */
     public class Task9 {
 
-    public static void findSAndP(){
-
-        System.out.println("enter r");
-        double r = Scanners.doubleScanner();
+    public static void findSAndP(double r){
         double s = findArea(r);
         double p = findCircle(r);
-        System.out.printf("Area=%d Circle=%d",s,p);
+        System.out.printf("Area=%a Circle=%a",s,p);
     }
 
     public static double findArea(double r){
