@@ -2,13 +2,16 @@ package by.epam.task1.task03;
 
 import by.epam.task1.properties.Scanners;
 
-public class Task3 {
+class SquareArea {
 
-    public  static double SecondSqrR(double sqR){
+    public  double SecondSqrR(double sqR){
+        if (sqR>0){
         return sqR/2;
+        }
+        return -1;
     }
 
-    public static int ratioOfSquares(int firstSqr,double secondSqr){
+    public  int ratioOfSquares(double firstSqr,double secondSqr){
         return ((int) (firstSqr/secondSqr));
     }
 

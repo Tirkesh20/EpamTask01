@@ -5,11 +5,16 @@ import java.util.Objects;
 public class Point {
     private double x;
     private double y;
-    private String pointName;
 
     public Point(){
 
     }
+
+    public Point(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
     public double getX() {
         return x;
     }
@@ -27,24 +32,14 @@ public class Point {
     }
 
 
-    public Point(String name) {
-        this.pointName=name;
-    }
 
-    public String getPointName() {
-        return pointName;
-    }
-
-    public void setPointName(String pointName) {
-        this.pointName = pointName;
-    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Point point = (Point) o;
-        return Double.compare(point.x, x) == 0 && Double.compare(point.y, y) == 0 && Objects.equals(pointName, point.pointName);
+        return Double.compare(point.x, x) == 0 && Double.compare(point.y, y) == 0;
     }
 
     @Override
@@ -52,12 +47,11 @@ public class Point {
         return "Point{" +
                 "x=" + x +
                 ", y=" + y +
-                ", pointName='" + pointName + '\'' +
                 '}';
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(x, y, pointName);
+        return Objects.hash(x, y);
     }
 }
