@@ -1,11 +1,10 @@
 package by.epam.task1.task06;
 
-import by.epam.task1.properties.Scanners;
     /*
     Идет n-я секунда суток, определить, сколько полных часов, полных минут и секунд прошло к этому
     моменту
      */
-public class Time {
+public class TimeCalculator implements TimeService {
 
     final  int secondsInMinute = 60;
     final  int minutesInHour = 60;

@@ -4,8 +4,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class TimeTest {
-    Time time=new Time();
+public class TimeCalculatorTest {
+   private final TimeService time=new TimeCalculator();
 
     @Test
     public void testCalculatePastHours_whenSecondLessThenOne() {

@@ -2,7 +2,7 @@ package by.epam.task1.task04;
 
 
 
- class EvenNumber {
+ class EvenNumber implements EvenNumberService {
 
     public  boolean result(int[] arr,int n){
         int counter = 0;

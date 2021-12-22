@@ -1,8 +1,7 @@
 package by.epam.task1.task08;
 
-import by.epam.task1.properties.Scanners;
 
-public class FindFunction {
+public class FindFunction implements FunctionService{
 
     public  double  FindFx(double x){
         return  (x<3) ? ifXSmaller(x) : ifXBigger(x);

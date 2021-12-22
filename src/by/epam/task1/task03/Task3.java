@@ -1,8 +1,7 @@
 package by.epam.task1.task03;
 
-import by.epam.task1.properties.Scanners;
 
-class SquareArea {
+class SquareArea implements SquareAreaService {
 
     public  double SecondSqrR(double sqR){
         if (sqR>0){

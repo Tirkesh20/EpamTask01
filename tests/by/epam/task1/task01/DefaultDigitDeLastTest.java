@@ -4,9 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class DigitDeLastTest {
+public class DefaultDigitDeLastTest {
 
-    DigitDeLast digitDeLast=new DigitDeLast();
+    DigitDeLast defaultDigitDeLast =new DefaultDigitDeLast();
+
     @Test
     public void whenNumberIsZero() {
         int expected=0;
@@ -30,7 +31,7 @@ public class DigitDeLastTest {
 
 
     private void test(int expected, int number) {
-        int actual = digitDeLast.getDigitDeLastOfSquare(number);
+        int actual = defaultDigitDeLast.getDigitDeLastOfSquare(number);
         assertEquals(expected, actual);
     }
 

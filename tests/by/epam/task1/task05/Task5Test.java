@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Task5Test {
-PerfectNumber perfectNumber=new PerfectNumber();
+    private final PerfectNumberService perfectNumber=new PerfectNumber();
 
     @Test
     public void numberIsPerfect() {

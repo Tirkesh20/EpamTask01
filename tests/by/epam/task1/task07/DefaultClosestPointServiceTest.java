@@ -5,9 +5,9 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class ClosestPointServiceTest {
+public class DefaultClosestPointServiceTest {
 
- ClosestPointService closestPointService=new ClosestPointService();
+    private  final ClosestPointService closestPointService=new DefaultClosestPointService();
 
     Point center = new Point(1, 3);
     Point point1 = new Point(7, 5);
@@ -15,7 +15,7 @@ public class ClosestPointServiceTest {
     Point point3 = new Point(3, 4);
 
     @Test(expected = NullPointerException.class)
-    public void testDefineClosestPoint_whenPointIsNull() throws NullPointerException {
+    public void testDefineClosestPoint_whenPointIsNull()  {
         closestPointService.minDist(null, center);
     }
 

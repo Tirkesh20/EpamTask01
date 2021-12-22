@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 
 public class FindFunctionTest {
 
-    FindFunction findFunction=new FindFunction();
+    private  final FunctionService findFunction=new FindFunction();
     double start;
     double step;
     double end;
@@ -25,7 +25,7 @@ public class FindFunctionTest {
     @Test(expected = IllegalArgumentException.class)
     public void testCalculateFunction_whenStepLessOfEqualsThanZero() throws IndexException, IllegalArgumentException {
         start=1;end=2;step=0;
-                findFunction.function(start, end, end);
+        findFunction.function(start, end, end);
     }
 
     @Test

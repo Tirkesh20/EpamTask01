@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class Task4Test {
-    EvenNumber evenNumberService=new EvenNumber();
+    private final EvenNumberService evenNumberService=new EvenNumber();
 
     @Test
     public void numbersAreEven() {

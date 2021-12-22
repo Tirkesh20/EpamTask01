@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class task2Test {
 
-    DaysCount daysCount=new DaysCount();
+    private final CountDays daysCount=new DefaultDaysCount();
 
     @Test
     public void monthEqualsZero() {

@@ -1,7 +1,7 @@
 package by.epam.task1.task02;
 
 
-public class DaysCount {
+public class DefaultDaysCount implements CountDays {
    public  final int MIN_NUMBER=1;
    public  int MAX_NUMBER=12;
    public  int[] days = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };

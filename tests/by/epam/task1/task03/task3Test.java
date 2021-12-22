@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class task3Test {
 
-    SquareArea squareArea=new SquareArea();
+    private final SquareAreaService squareArea=new SquareArea();
     @Test
     public void testCalculateInsideSquareArea_whenOutsideSquareAreaLessThenZero() {
         double expected = -1;

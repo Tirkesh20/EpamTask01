@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class FindFunctionTest {
 
-    FindFunction findFunction=new FindFunction();
+    private final FunctionService findFunction=new FindFunction();
     @Test
     public void testIfNumberBiggerThanThree() {
         double expected = 9;

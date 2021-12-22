@@ -6,34 +6,29 @@ import by.epam.task1.validator.Validator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/*
-     Составить программу для вычисления значений функции F(x) на отрезке [а, b] с шагом h. Результат
-    представить в виде таблицы, первый столбец которой – значения аргумента, второй - соответствующие
-    значения функции:F(x)=tg(x)
-    */
-public class FindFunction {
+public class FindFunction implements FunctionService {
 
-    Validator validator=new Validator();
+    private final Validator validator=new Validator();
 
-        public Map<double, double> function(double a, double b, double h) throws IndexException, IllegalArgumentException {
-                if (b <= a) {
-                    throw new IndexException();
-                }
-                if (validator.lessOrEqualThanZero(h)){
-                    throw new IllegalArgumentException("step is smaller than 0");
-                }
-
-            return makeTable(a,b,h);
+    public Map<double, double> function(double a, double b, double h) throws IndexException, IllegalArgumentException {
+        if (b <= a) {
+            throw new IndexException();
+        }
+        if (validator.lessOrEqualThanZero(h)){
+            throw new IllegalArgumentException("step is smaller than 0");
         }
 
-        public  Map<double,double> makeTable(double a,double b,double h){
-            Map<double,double> table=new LinkedHashMap<double, double>();
-            double x=a;
-            while (x<b){
-               table.put(x,Math.tan(x)) ;
-                x+=h;
-            }
-            return table;
+        return makeTable(a,b,h);
+    }
+
+    public  Map<double,double> makeTable(double a,double b,double h){
+        Map<double,double> table=new LinkedHashMap<double, double>();
+        double x=a;
+        while (x<b){
+            table.put(x,Math.tan(x)) ;
+            x+=h;
         }
+        return table;
+    }
 
 }

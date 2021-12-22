@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class CircleTest {
 
-    Circle circle=new Circle();
+    CircleService circle=new Circle();
 
     @Test
     public void testFindCircleArea_IfRadiusLessOrEqualsThanZero() {
